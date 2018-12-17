@@ -5,7 +5,7 @@
     <meta charset="gb2312">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>加好友界面</title>
+    <title>付款加好友界面</title>
 
     <script>
     var setting = {
@@ -93,7 +93,7 @@
 
 </head>
 <body>
-    <!-- 加好友界面展示区域 -->
+    <!-- 付款加好友展示区域 -->
     <div class="code-item" id="code-all">
         <div class="code-title"></div>
         <div class="code-area">
@@ -133,7 +133,7 @@
         document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
         document.getElementById("code-qq").style.display = "block";
     } else {
-        // 其它，显示“加好面”
+        // 其它，显示“付款面”
         document.getElementById("page-url").src = setting.qrcodeApi + urlEncode(window.location.href);
         document.getElementById("code-all").style.display = "block";
     }
